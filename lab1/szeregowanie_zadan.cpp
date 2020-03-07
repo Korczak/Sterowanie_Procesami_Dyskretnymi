@@ -151,10 +151,11 @@ void Wyswietl(int LiczbaZadan, int cm){
     // wyswietlenie kolejnosci:
     cout << endl << "Wyliczona kolejnosc: ";
     for (unsigned int i = 0; i < LiczbaZadan + 1; i++){
-        //cout << TabZadan[i];
         for(int j = 0 ; j < LiczbaZadan; j++) {
-            if(TabZadan[j].kolejnosc == i)
+            if(TabZadan[j].kolejnosc == i) {
                 cout << TabZadan[j].poczatkowa + 1 << " ";
+                break;
+            }
         }
     }
     cout << endl << "Obliczanie Cmax: ";
